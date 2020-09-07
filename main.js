@@ -5,7 +5,7 @@ client.once('ready', () => {
     console.log('Ready!')
 });
 
-client.login('NzUyNjMyNDgzMDM1NDgwMjI0.X1adnw.GxK9MhipR89pG7EBeOeqkzxy0-s');
+client.login('NzUyNjMyNDgzMDM1NDgwMjI0.X1adnw.SQNIEA6IV2ZbnBbozi9-Ro9zuTs');
 
 client.on('message', message => {
     if (message.content === '?ip') {
