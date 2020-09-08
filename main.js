@@ -5,41 +5,50 @@ client.once('ready', () => {
     console.log('Ready!')
 });
 
-client.login('NzUyNjMyNDgzMDM1NDgwMjI0.X1adnw.GxK9MhipR89pG7EBeOeqkzxy0-s');
+client.login('NzUyNjMyNDgzMDM1NDgwMjI0.X1adnw.Svr759s0nffqRMPDZwUG_NuBq1c');
 
 client.on('message', message => {
-    if (message.content === '?ip') {
+    if (message.content === '?ip') { /** Condition for IP Command */
 
         message.channel.send('`play.solusmc.net`');
 
-    } else if (message.content === '?forums') {
+    } else if (message.content === '?forums') { /** Condition for Forums Link Command */
 
         message.channel.send('https://solusmc.net/forums');
 
-    } else if (message.content === '?website') {
+    } else if (message.content === '?website') { /** Condition for Website Link Command */
 
         message.channel.send('https://www.solusmc.net/');
 
-    } else if (message.content === '?discord') {
+    } else if (message.content === '?discord') { /** Condition for Discord Invite Link Command */
 
         message.channel.send('`invite.gg/solusmc`');
 
-    } else if (message.content === '?apply') {
+    } else if (message.content === '?apply') { /** Condition for Application Info Command */
 
         message.channel.send('Please see https://www.solusmc.net/forums/forum/view/17-applications-and-appeals/ for more information regarding applying for staff, builder, or YouTuber, and appealing a ban or blacklist. Please read the guidelines and requirements before you apply!');
 
-    } else if (message.content === '?staff') {
+    } else if (message.content === '?staff') { /** Condition for Staff Roles Command */
 
         message.channel.send('`Owner, Admin, Senior Mod, Moderator, Trainee`');
 
-    } else if (message.content === '?help') {
+    } else if (message.content === '?smod') { // Condition for SMods List Command
 
-        message.channel.send('`?forums -> Forums Link\n?website -> Website Link`');
+        message.channel.send('`Tact, HurtCry`');
 
-    } else if (message.content === '?owner') {
+    } else if (message.content === '?admin') { // Condition for Admin List Command
+
+        message.channel.send('`georgieHH`');
+
+    } else if (message.content === '?help') { // Condition for Bot Help Command
+
+        message.channel.send('`?help -> All Commands With Description\n?ip -> Server IP Address\n?forums -> Forums Link\n?website -> Website Link\n?apply -> Application Info\n?staff -> All Staff Ranks`');
+
+    } else if (message.content === '?owner') { // Condition for Owner Name Command
 
         message.channel.send('`The owner of this server is Khosraw Azizi. He a cutie! <3`');
 
+        // Miscellaneous Command Conditions
     } else if (message.content === 'bot' || message.content == 'Bot') {
 
         message.channel.send('`Who you callin\' a bot?`');
