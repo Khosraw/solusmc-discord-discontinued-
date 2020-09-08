@@ -16,6 +16,10 @@ client.on('message', message => {
 
         message.channel.send('`play.solusmc.net`');
 
+    } else if (message.content === '?rules') { /** Condition for IP Command */
+
+        message.channel.send('Please read #rules for all the rules!');
+
     } else if (message.content === '?forums') { /** Condition for Forums Link Command */
 
         message.channel.send('https://solusmc.net/forums');
