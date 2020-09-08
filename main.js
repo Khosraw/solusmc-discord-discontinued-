@@ -8,7 +8,7 @@ client.once('ready', () => {
 client.login('NzUyNjMyNDgzMDM1NDgwMjI0.X1adnw.Svr759s0nffqRMPDZwUG_NuBq1c');
 
 client.on('message', message => {
-    if (message.content === '?solus') {
+    if (message.content === '?solus' || message.content === '?info') {
 
 		message.channel.send('`SolusMC is a Cracked Minecraft server founded by @KhosrawAzizi#5634 and it was released for the first time on August 25, 2020. Ever since, our server\'s player base is intermittently growing since it\'s first released, users around all over the world playing our amazing gamemodes and enjoying their time here with our beloved community. Can\'t wait to play? Join the community today!`');
 
