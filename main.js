@@ -42,11 +42,11 @@ client.on('message', message => {
 
     } else if (message.content === '?smod') { // Condition for SMods List Command
 
-        message.channel.send('`Tact, HurtCry`');
+        message.channel.send('`HurtCry`');
 
     } else if (message.content === '?admin') { // Condition for Admin List Command
 
-        message.channel.send('`georgieHH`');
+        message.channel.send('`Tact, georgieHH`');
 
     } else if (message.content === '?help') { // Condition for Bot Help Command
 
@@ -61,21 +61,9 @@ client.on('message', message => {
 
         message.channel.send('`Who you callin\' a bot?`');
 
-    } else if (message.content === 'I am sad' || message.content == 'im sad' || message.content === 'I am sad.' || message.content === 'I am sad!' || message.content === 'big sad') {
-
-        message.channel.send('`I am sad too! :(`');
-
     } else if (message.content === 'Happy now?') {
 
         message.channel.send('`Thanks cutie! I am happy now!`');
-
-    } else if (message.content === 'idk' || message.content === 'IDK' || message.content === 'idek' || message.content === 'IDEK' || message.content === 'idrk' || message.content === 'IDRK' || message.content === 'i dont know' || message.content === 'I don\'t know' || message.content === 'I don\'t know!') {
-
-        message.channel.send('¯\\_(ツ)_/¯');
-
-    } else if (message.content === ': (' || message.content === ':frowning:') {
-
-        message.channel.send(':(');
 
     }
 
