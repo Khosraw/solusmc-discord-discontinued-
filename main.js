@@ -28,9 +28,9 @@ client.on('message', message => {
 
         message.channel.send('https://www.solusmc.net/');
 
-    } else if (message.content === '?discord') { /** Condition for Discord Invite Link Command */
+    } else if (message.content === '?discord' || message.content === '?invite') { /** Condition for Discord Invite Link Command */
 
-        message.channel.send('`invite.gg/solusmc`');
+        message.channel.send('invite.gg/solusmc');
 	    
     } else if (message.content === '?store') { /** Condition for Store Link Command */
 
@@ -46,7 +46,7 @@ client.on('message', message => {
 
     } else if (message.content === '?help') { // Condition for Bot Help Command
 
-        message.channel.send('`?help -> All Commands With Description\n\n?info -> Server Information\n?ip -> Server IP Address\n?rules -> Rules for the server and Discord\n?forums -> Forums Link\n?website -> Website Link\n?discord -> Discord Invite Link\n?store -> Server Store for buying Ranks and upgrades\n?apply -> Application Info\n?staff -> Link to Staff Page\n?vote -> Link to Voting Links`');
+        message.channel.send('`?help -> All Commands With Description\n\n?info -> Server Information\n?ip -> Server IP Address\n?rules -> Rules for the server and Discord\n?forums -> Forums Link\n?website -> Website Link\n?discord/?invite -> Discord Invite Link\n?store -> Server Store for buying Ranks and upgrades\n?apply -> Application Info\n?staff -> Link to Staff Page\n?vote -> Link to Voting Links`');
 
     } else if (message.content === '?vote') { /** Condition for Vote Link Command */
 
