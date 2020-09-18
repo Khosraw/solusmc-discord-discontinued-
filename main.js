@@ -30,7 +30,7 @@ client.on('message', message => {
 
     } else if (message.content === '?discord' || message.content === '?invite') { /** Condition for Discord Invite Link Command */
 
-        message.channel.send('invite.gg/solusmc');
+        message.channel.send('https://invite.gg/solusmc\nhttps://discord.gg/vVbx9YU');
 	    
     } else if (message.content === '?store') { /** Condition for Store Link Command */
 
