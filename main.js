@@ -10,7 +10,7 @@ client.login('NzUyNjMyNDgzMDM1NDgwMjI0.X1adnw.Svr759s0nffqRMPDZwUG_NuBq1c');
 client.on('message', message => {
     if (message.content === '?solus' || message.content === '?info') {
 
-	message.channel.send('`SolusMC is a Cracked Minecraft server founded by @KhosrawAzizi#5634 and it was released for the first time on August 25, 2020. Ever since, our server\'s player base is intermittently growing since it\'s first released, users around all over the world playing our amazing gamemodes and enjoying their time here with our beloved community. Can\'t wait to play? Join the community today!`');
+	message.channel.send('`SolusMC is a Cracked Minecraft server founded by Cicada3083#5634 and it was released for the first time on August 25, 2020. Ever since, our server\'s player base is intermittently growing since it\'s first released, users around all over the world playing our amazing gamemodes and enjoying their time here with our beloved community. Can\'t wait to play? Join the community today!`');
 
     } else if (message.content === '?ip') { /** Condition for Information Command */
 
@@ -34,7 +34,7 @@ client.on('message', message => {
 	    
     } else if (message.content === '?store') { /** Condition for Store Link Command */
 
-        message.channel.send('`Please consider making a donation at https://store.solusmc.net!`');
+        message.channel.send('`Please consider making a donation at https://solusmc.tebex.io`');
 
     } else if (message.content === '?apply') { /** Condition for Application Info Command */
 
@@ -54,7 +54,7 @@ client.on('message', message => {
 	    
     } else if (message.content === '?owner') { // Condition for Owner Name Command
 
-        message.channel.send('`The owner of this server is Khosraw Azizi. He a cutie! <3`');
+        message.channel.send('`The owner of this server is Cicada3083. He a cutie! <3`');
 
         // Miscellaneous Command Conditions
     } else if (message.content === 'bot' || message.content == 'Bot') {
@@ -68,7 +68,11 @@ client.on('message', message => {
     } else if (message.content === ':(') {
 
         message.channel.send('`Cheer up buddy!`');
-
+	    
+    } else if (message.content === '?secret') { // Condition for Secret Command
+	
+	message.channel.send('`You found the secret command! This bot was coded by Cicada3083 and Tact.`); 
+	   
     }
 
 });
