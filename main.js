@@ -71,7 +71,7 @@ client.on('message', message => {
 	    
     } else if (message.content === '?secret') { // Condition for Secret Command
 	
-	message.channel.send('`You found the secret command! This bot was coded by Cicada3083 and Tact.`); 
+	message.channel.send('`You found the secret command! This bot was coded by Cicada3083 and Tact!`); 
 	   
     }
 
