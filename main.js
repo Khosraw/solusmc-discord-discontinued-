@@ -1,14 +1,25 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const {
+    prefix, 
+    token, 
+    bot_age, 
+    bot_info, 
+    words_array
+} = require('./config.json');
 
 client.once('ready', () => {
-    console.log('Ready!')
+    console.log(prefix);
+    console.log(token);
+    console.log(bot_age);
+    console.log(bot_info.name);
+    console.log(bot_info.version);
 });
 
-client.login('NzUyNjMyNDgzMDM1NDgwMjI0.X1adnw.Svr759s0nffqRMPDZwUG_NuBq1c');
+client.login(token);
 
 client.on('message', message => {
-    if (message.content === '?solus' || message.content === '?info') {
+    if (message.content === `${prefix}solus` || message.content === `${prefix}info`) {
 
 	message.channel.send('`SolusMC is a Cracked Minecraft server founded by Cicada3083#5634 and it was released for the first time on August 25, 2020. Ever since, our server\'s player base is intermittently growing since it\'s first released, users around all over the world playing our amazing gamemodes and enjoying their time here with our beloved community. Can\'t wait to play? Join the community today!`');
 
@@ -71,7 +82,7 @@ client.on('message', message => {
 	    
     } else if (message.content === '?secret') { // Condition for Secret Command
 	
-	message.channel.send('`You found the secret command! This bot was coded by Cicada3083 and Tact!`); 
+	message.channel.send('`You found the secret command! This bot was coded by Cicada3083 and Tact!`'); 
 	   
     }
 
