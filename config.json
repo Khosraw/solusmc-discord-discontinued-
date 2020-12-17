@@ -1,9 +1,4 @@
 {
-    "prefix": "?", 
-    "token": "NzUyNjMyNDgzMDM1NDgwMjI0.X1adnw.Svr759s0nffqRMPDZwUG_NuBq1c",
-    "bot_age": 1,
-	"bot_info": {
-        "name": "SolusMC Spy",
-        "version": 1.1
-    }
+  "everyoneMention": true,
+  "hostedBy": true
 }
