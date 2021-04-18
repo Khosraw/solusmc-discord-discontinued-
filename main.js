@@ -157,7 +157,6 @@ client.on("messageReactionRemove", async (reaction, user) => {
   }
 })
 
-require('./uptime.js')
 const queue = new Map();
 
 client.on("ready", () => {
@@ -576,7 +575,7 @@ client.on('message', async message => {
       embed.addField('Bot Statistics:', `Server: ${guild} \nUser: ${user} \nChannel: ${channel} \nUsage: ${usage} \nNode: ${Node} \nCPU Usage: ${CPU}%`) // Use Grave accent or `` 
       // (its on your keyboard, besides on number 1.)
       // Use \n to make a new line.
-      embed.addField('Physical Statistics:', `CPU: ${cores} - ${cpuModel} \nUptime: **${parseDur(client.uptime)}**`)
+      embed.addField('Physical Statistics:', `CPU: ${cores} - ${cpuModel}**`)
       // Let's test it!
       // Use ** turn the text into bold.
       // Let's test again.
