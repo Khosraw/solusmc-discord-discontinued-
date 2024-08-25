@@ -1,0 +1,7 @@
+{
+  "prefix": "?",
+  "token": "YOUR_BOT_TOKEN_HERE",
+  "google": "YOUR_GOOGLE_API_KEY_HERE",
+  "hostedBy": true,
+  "everyoneMention": true
+}

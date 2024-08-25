@@ -1,10 +1,10 @@
 {
-  "name": "hello-express",
+  "name": "solusmc-discord-bot",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "cpu-stat": "^2.0.1",
